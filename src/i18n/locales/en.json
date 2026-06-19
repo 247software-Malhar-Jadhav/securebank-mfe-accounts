@@ -1,0 +1,68 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "back": "Back",
+    "noData": "No data to display"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Your accounts at a glance",
+    "totalBalance": "Total balance",
+    "balanceCards": "Account balances",
+    "recentTransactions": "Recent transactions",
+    "spendingInsights": "Spending insights",
+    "aiSummary": "AI summary",
+    "noTransactions": "No recent transactions",
+    "errorInsights": "Could not load spending insights"
+  },
+  "accounts": {
+    "title": "Accounts",
+    "subtitle": "Manage your accounts",
+    "openAccount": "Open account",
+    "accountNumber": "Account number",
+    "type": "Type",
+    "balance": "Balance",
+    "status": "Status",
+    "viewDetails": "View details",
+    "errorList": "Could not load accounts",
+    "empty": "You have no accounts yet",
+    "detail": {
+      "title": "Account details",
+      "transactions": "Transactions",
+      "date": "Date",
+      "description": "Description",
+      "category": "Category",
+      "amount": "Amount",
+      "balanceAfter": "Balance after",
+      "noTransactions": "No transactions for this account",
+      "errorTransactions": "Could not load transactions"
+    },
+    "dialog": {
+      "title": "Open a new account",
+      "description": "Choose the account type and currency to get started.",
+      "type": "Account type",
+      "currency": "Currency",
+      "openingBalance": "Opening balance (optional)",
+      "submit": "Open account",
+      "submitting": "Opening…",
+      "error": "Could not open account. Please try again."
+    },
+    "type": {
+      "CHECKING": "Checking",
+      "SAVINGS": "Savings",
+      "CREDIT": "Credit"
+    },
+    "status": {
+      "ACTIVE": "Active",
+      "FROZEN": "Frozen",
+      "CLOSED": "Closed"
+    },
+    "direction": {
+      "CREDIT": "Credit",
+      "DEBIT": "Debit"
+    }
+  }
+}

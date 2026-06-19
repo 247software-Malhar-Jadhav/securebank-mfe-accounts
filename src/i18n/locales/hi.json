@@ -1,0 +1,68 @@
+{
+  "common": {
+    "loading": "लोड हो रहा है…",
+    "error": "कुछ गलत हो गया",
+    "retry": "पुनः प्रयास करें",
+    "cancel": "रद्द करें",
+    "back": "वापस",
+    "noData": "दिखाने के लिए कोई डेटा नहीं"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "subtitle": "एक नज़र में आपके खाते",
+    "totalBalance": "कुल शेष राशि",
+    "balanceCards": "खाता शेष राशि",
+    "recentTransactions": "हाल के लेन-देन",
+    "spendingInsights": "खर्च विश्लेषण",
+    "aiSummary": "एआई सारांश",
+    "noTransactions": "कोई हालिया लेन-देन नहीं",
+    "errorInsights": "खर्च विश्लेषण लोड नहीं हो सका"
+  },
+  "accounts": {
+    "title": "खाते",
+    "subtitle": "अपने खाते प्रबंधित करें",
+    "openAccount": "खाता खोलें",
+    "accountNumber": "खाता संख्या",
+    "type": "प्रकार",
+    "balance": "शेष राशि",
+    "status": "स्थिति",
+    "viewDetails": "विवरण देखें",
+    "errorList": "खाते लोड नहीं हो सके",
+    "empty": "अभी तक आपके पास कोई खाता नहीं है",
+    "detail": {
+      "title": "खाता विवरण",
+      "transactions": "लेन-देन",
+      "date": "तारीख",
+      "description": "विवरण",
+      "category": "श्रेणी",
+      "amount": "राशि",
+      "balanceAfter": "शेष राशि (बाद में)",
+      "noTransactions": "इस खाते के लिए कोई लेन-देन नहीं",
+      "errorTransactions": "लेन-देन लोड नहीं हो सके"
+    },
+    "dialog": {
+      "title": "नया खाता खोलें",
+      "description": "शुरू करने के लिए खाता प्रकार और मुद्रा चुनें।",
+      "type": "खाता प्रकार",
+      "currency": "मुद्रा",
+      "openingBalance": "प्रारंभिक शेष राशि (वैकल्पिक)",
+      "submit": "खाता खोलें",
+      "submitting": "खोला जा रहा है…",
+      "error": "खाता नहीं खोला जा सका। कृपया पुनः प्रयास करें।"
+    },
+    "type": {
+      "CHECKING": "चालू खाता",
+      "SAVINGS": "बचत खाता",
+      "CREDIT": "क्रेडिट"
+    },
+    "status": {
+      "ACTIVE": "सक्रिय",
+      "FROZEN": "फ़्रीज़",
+      "CLOSED": "बंद"
+    },
+    "direction": {
+      "CREDIT": "जमा",
+      "DEBIT": "नामे"
+    }
+  }
+}

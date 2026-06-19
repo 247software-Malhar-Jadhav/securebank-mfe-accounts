@@ -1,0 +1,68 @@
+{
+  "common": {
+    "loading": "लोड होत आहे…",
+    "error": "काहीतरी चूक झाली",
+    "retry": "पुन्हा प्रयत्न करा",
+    "cancel": "रद्द करा",
+    "back": "मागे",
+    "noData": "दाखवण्यासाठी कोणताही डेटा नाही"
+  },
+  "dashboard": {
+    "title": "डॅशबोर्ड",
+    "subtitle": "तुमची खाती एका दृष्टीक्षेपात",
+    "totalBalance": "एकूण शिल्लक",
+    "balanceCards": "खाते शिल्लक",
+    "recentTransactions": "अलीकडील व्यवहार",
+    "spendingInsights": "खर्च विश्लेषण",
+    "aiSummary": "एआय सारांश",
+    "noTransactions": "अलीकडील व्यवहार नाहीत",
+    "errorInsights": "खर्च विश्लेषण लोड करता आले नाही"
+  },
+  "accounts": {
+    "title": "खाती",
+    "subtitle": "तुमची खाती व्यवस्थापित करा",
+    "openAccount": "खाते उघडा",
+    "accountNumber": "खाते क्रमांक",
+    "type": "प्रकार",
+    "balance": "शिल्लक",
+    "status": "स्थिती",
+    "viewDetails": "तपशील पहा",
+    "errorList": "खाती लोड करता आली नाहीत",
+    "empty": "तुमच्याकडे अद्याप कोणतेही खाते नाही",
+    "detail": {
+      "title": "खाते तपशील",
+      "transactions": "व्यवहार",
+      "date": "तारीख",
+      "description": "वर्णन",
+      "category": "श्रेणी",
+      "amount": "रक्कम",
+      "balanceAfter": "शिल्लक (नंतर)",
+      "noTransactions": "या खात्यासाठी कोणतेही व्यवहार नाहीत",
+      "errorTransactions": "व्यवहार लोड करता आले नाहीत"
+    },
+    "dialog": {
+      "title": "नवीन खाते उघडा",
+      "description": "सुरुवात करण्यासाठी खाते प्रकार आणि चलन निवडा.",
+      "type": "खाते प्रकार",
+      "currency": "चलन",
+      "openingBalance": "सुरुवातीची शिल्लक (पर्यायी)",
+      "submit": "खाते उघडा",
+      "submitting": "उघडत आहे…",
+      "error": "खाते उघडता आले नाही. कृपया पुन्हा प्रयत्न करा."
+    },
+    "type": {
+      "CHECKING": "चालू खाते",
+      "SAVINGS": "बचत खाते",
+      "CREDIT": "क्रेडिट"
+    },
+    "status": {
+      "ACTIVE": "सक्रिय",
+      "FROZEN": "गोठवलेले",
+      "CLOSED": "बंद"
+    },
+    "direction": {
+      "CREDIT": "जमा",
+      "DEBIT": "नावे"
+    }
+  }
+}
