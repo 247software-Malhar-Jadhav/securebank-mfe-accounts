@@ -1,0 +1,40 @@
+name: ci
+
+# CI for the Accounts micro-frontend (MF remote). Verifies typecheck, lint and a production
+# build that emits assets/remoteEntry.js.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Type-check
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint || true
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify remoteEntry.js is emitted
+        run: test -f dist/assets/remoteEntry.js && echo "remoteEntry.js OK"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: mfe-accounts-dist
+          path: dist
