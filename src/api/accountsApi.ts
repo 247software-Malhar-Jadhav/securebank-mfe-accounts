@@ -1,6 +1,10 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import i18next from "i18next";
+import * as i18nextNs from "i18next";
 import { readAccessToken } from "@/lib/auth";
+
+// Federation interop: normalize the shared i18next namespace to the real instance.
+const i18next = ((i18nextNs as unknown as { default?: typeof import("i18next").default }).default
+  ?? (i18nextNs as unknown as typeof import("i18next").default));
 import type {
   Account,
   OpenAccountRequest,

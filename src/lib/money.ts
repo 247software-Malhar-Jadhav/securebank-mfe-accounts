@@ -1,4 +1,8 @@
-import i18next from "i18next";
+import * as i18nextNs from "i18next";
+// Federation interop: normalize the shared i18next namespace to the real instance so
+// `i18next.language` reflects the live (shell-controlled) language.
+const i18next = ((i18nextNs as unknown as { default?: typeof import("i18next").default }).default
+  ?? (i18nextNs as unknown as typeof import("i18next").default));
 
 /**
  * Format a money amount using `Intl.NumberFormat`, honoring BOTH the active i18n locale and
