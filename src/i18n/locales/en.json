@@ -23,9 +23,19 @@
     "subtitle": "Manage your accounts",
     "openAccount": "Open account",
     "accountNumber": "Account number",
-    "type": "Type",
+    "type": {
+      "CHECKING": "Checking",
+      "SAVINGS": "Savings",
+      "CREDIT": "Credit",
+      "CURRENT": "Current",
+      "FIXED_DEPOSIT": "Fixed deposit"
+    },
     "balance": "Balance",
-    "status": "Status",
+    "status": {
+      "ACTIVE": "Active",
+      "FROZEN": "Frozen",
+      "CLOSED": "Closed"
+    },
     "viewDetails": "View details",
     "errorList": "Could not load accounts",
     "empty": "You have no accounts yet",
@@ -50,19 +60,11 @@
       "submitting": "Opening…",
       "error": "Could not open account. Please try again."
     },
-    "type": {
-      "CHECKING": "Checking",
-      "SAVINGS": "Savings",
-      "CREDIT": "Credit"
-    },
-    "status": {
-      "ACTIVE": "Active",
-      "FROZEN": "Frozen",
-      "CLOSED": "Closed"
-    },
     "direction": {
       "CREDIT": "Credit",
       "DEBIT": "Debit"
-    }
+    },
+    "typeHeading": "Type",
+    "statusHeading": "Status"
   }
 }

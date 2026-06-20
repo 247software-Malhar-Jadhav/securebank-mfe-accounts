@@ -69,8 +69,8 @@ export default function Accounts() {
               <TableHeader>
                 <TableRow>
                   <TableHead>{t("accounts.accountNumber")}</TableHead>
-                  <TableHead>{t("accounts.type")}</TableHead>
-                  <TableHead>{t("accounts.status")}</TableHead>
+                  <TableHead>{t("accounts.typeHeading")}</TableHead>
+                  <TableHead>{t("accounts.statusHeading")}</TableHead>
                   <TableHead className="text-right">{t("accounts.balance")}</TableHead>
                   <TableHead className="text-right" />
                 </TableRow>

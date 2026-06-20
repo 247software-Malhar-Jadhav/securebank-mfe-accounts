@@ -23,9 +23,19 @@
     "subtitle": "तुमची खाती व्यवस्थापित करा",
     "openAccount": "खाते उघडा",
     "accountNumber": "खाते क्रमांक",
-    "type": "प्रकार",
+    "type": {
+      "CHECKING": "चालू खाते",
+      "SAVINGS": "बचत खाते",
+      "CREDIT": "क्रेडिट",
+      "CURRENT": "चालू खाते",
+      "FIXED_DEPOSIT": "मुदत ठेव"
+    },
     "balance": "शिल्लक",
-    "status": "स्थिती",
+    "status": {
+      "ACTIVE": "सक्रिय",
+      "FROZEN": "गोठवलेले",
+      "CLOSED": "बंद"
+    },
     "viewDetails": "तपशील पहा",
     "errorList": "खाती लोड करता आली नाहीत",
     "empty": "तुमच्याकडे अद्याप कोणतेही खाते नाही",
@@ -50,19 +60,11 @@
       "submitting": "उघडत आहे…",
       "error": "खाते उघडता आले नाही. कृपया पुन्हा प्रयत्न करा."
     },
-    "type": {
-      "CHECKING": "चालू खाते",
-      "SAVINGS": "बचत खाते",
-      "CREDIT": "क्रेडिट"
-    },
-    "status": {
-      "ACTIVE": "सक्रिय",
-      "FROZEN": "गोठवलेले",
-      "CLOSED": "बंद"
-    },
     "direction": {
       "CREDIT": "जमा",
       "DEBIT": "नावे"
-    }
+    },
+    "typeHeading": "प्रकार",
+    "statusHeading": "स्थिती"
   }
 }

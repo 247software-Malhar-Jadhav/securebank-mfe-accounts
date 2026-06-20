@@ -70,12 +70,13 @@ export const accountsApi = createApi({
     }),
 
     /**
-     * GET /api/insights/spending — category breakdown + localized AI summary.
-     * The backend reads the customer from the gateway-injected X-User-Id header, so no
-     * query param is required from the browser in embedded mode.
+     * GET /api/insights/spending?customerId=… — category breakdown + localized AI summary.
+     * The backend REQUIRES the customerId query param, so we pass the customer id taken
+     * from the loaded accounts (omitting it returns HTTP 400).
      */
-    getSpendingInsights: builder.query<SpendingInsights, void>({
-      query: () => "/insights/spending",
+    getSpendingInsights: builder.query<SpendingInsights, string>({
+      query: (customerId) =>
+        `/insights/spending?customerId=${encodeURIComponent(customerId)}`,
     }),
 
     /** POST /api/accounts — open a new account. Invalidates the list so it refetches. */

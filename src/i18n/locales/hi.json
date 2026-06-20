@@ -23,9 +23,19 @@
     "subtitle": "अपने खाते प्रबंधित करें",
     "openAccount": "खाता खोलें",
     "accountNumber": "खाता संख्या",
-    "type": "प्रकार",
+    "type": {
+      "CHECKING": "चालू खाता",
+      "SAVINGS": "बचत खाता",
+      "CREDIT": "क्रेडिट",
+      "CURRENT": "चालू खाता",
+      "FIXED_DEPOSIT": "सावधि जमा"
+    },
     "balance": "शेष राशि",
-    "status": "स्थिति",
+    "status": {
+      "ACTIVE": "सक्रिय",
+      "FROZEN": "फ़्रीज़",
+      "CLOSED": "बंद"
+    },
     "viewDetails": "विवरण देखें",
     "errorList": "खाते लोड नहीं हो सके",
     "empty": "अभी तक आपके पास कोई खाता नहीं है",
@@ -50,19 +60,11 @@
       "submitting": "खोला जा रहा है…",
       "error": "खाता नहीं खोला जा सका। कृपया पुनः प्रयास करें।"
     },
-    "type": {
-      "CHECKING": "चालू खाता",
-      "SAVINGS": "बचत खाता",
-      "CREDIT": "क्रेडिट"
-    },
-    "status": {
-      "ACTIVE": "सक्रिय",
-      "FROZEN": "फ़्रीज़",
-      "CLOSED": "बंद"
-    },
     "direction": {
       "CREDIT": "जमा",
       "DEBIT": "नामे"
-    }
+    },
+    "typeHeading": "प्रकार",
+    "statusHeading": "स्थिति"
   }
 }

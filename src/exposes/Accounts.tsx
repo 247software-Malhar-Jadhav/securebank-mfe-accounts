@@ -1,7 +1,16 @@
 /**
  * FEDERATION EXPOSE: `mfe_accounts/Accounts`.
  *
- * Thin re-export of the Accounts feature (same rationale as Dashboard.tsx). The host renders
- * this and relies on the shared singletons for React/Redux/i18n/router context.
+ * Wrapped in <EmbedProvider> (own Redux store + i18n bundles) so RTK Query hooks run and
+ * translations resolve whether embedded in the shell or mounted bare.
  */
-export { default } from "@/features/accounts/Accounts";
+import Accounts from "@/features/accounts/Accounts";
+import { EmbedProvider } from "@/exposes/EmbedProvider";
+
+export default function ExposedAccounts() {
+  return (
+    <EmbedProvider>
+      <Accounts />
+    </EmbedProvider>
+  );
+}

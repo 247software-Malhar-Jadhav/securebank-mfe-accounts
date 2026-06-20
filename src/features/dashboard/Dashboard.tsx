@@ -37,7 +37,12 @@ export default function Dashboard() {
   const { t, i18n } = useTranslation();
 
   const accountsQ = useListAccountsQuery();
-  const insightsQ = useGetSpendingInsightsQuery();
+  // Insights are keyed by customer id, read from the loaded accounts. Skip until known
+  // (the backend requires the customerId query param, else it returns 400).
+  const customerId = accountsQ.data?.[0]?.customerId;
+  const insightsQ = useGetSpendingInsightsQuery(customerId as string, {
+    skip: !customerId,
+  });
 
   // Pick a display currency (the first account's) for the chart/totals.
   const currency = accountsQ.data?.[0]?.currency ?? "INR";
